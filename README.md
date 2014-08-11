@@ -66,6 +66,28 @@ This demo also shows how to implement this in the preferences.
 
 `profile.getInterests()` would return a `List<String>` containing the interests of this user we predict.
 
+The `1.0.1-beta` supports following interests:
+* Music consumption
+* Movies
+* Auto enthusiasts
+* Health
+* Fitness
+* Cooking
+* Gastronomy
+* Education
+* Traveling
+* Sports entertainment
+* Sports activity
+* Running
+* Singles
+* Pregnancy
+* Techies
+* Dieting
+* Value shopper
+* Books
+* Real Estate
+
+
 ## Use AdMobPlugin to decorate an ad request
 
 You could use our `AdMobPlugin` to attach inferred profile to an AdMob ad request to increase the chance getting better targeted ads.
