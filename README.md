@@ -4,8 +4,11 @@
 
 ## Demo
 
-This repo is a demo app printing the debug info from the profiler sdk. The app is built with [Android Studio](https://developer.android.com/sdk/installing/studio.html).
+This repo demonstrated how to integrate profiler sdk. The app is built with [Android Studio](https://developer.android.com/sdk/installing/studio.html).
 
+If you simply want to check out what 42matters profiler would infer about you, try the **Google Play Version**
+
+[![](https://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](https://play.google.com/store/apps/details?id=com.core42matters.android.profiler)
 ## How to integrate in your app
 
 ### Prerequisites
@@ -15,7 +18,7 @@ This repo is a demo app printing the debug info from the profiler sdk. The app i
 
 ### Integrate the library
 
-1. Download the [latest jar (1.0.2-beta)](https://s3.amazonaws.com/profiler.42matters.com/42matters-profiler-1.0.2-beta.jar)
+1. Download the [latest jar (1.0.3-beta)](https://s3.amazonaws.com/profiler.42matters.com/42matters-profiler-1.0.3-beta.jar)
 
 2. Put the jar into your project and correctly reference it.
 
@@ -56,7 +59,7 @@ You need to provide a preference in the default shared preferences for users to 
 This demo also shows how to implement this in the preferences.
 
 
-## What's inside a profile (1.0.2-beta)
+## What's inside a profile (1.0.3-beta)
 
 ### Gender
 
@@ -66,7 +69,7 @@ This demo also shows how to implement this in the preferences.
 
 `profile.getInterests()` would return a `List<String>` containing the interests of this user we predict.
 
-The `1.0.2-beta` supports following interests:
+The `1.0.3-beta` supports following interests:
 * Music consumption
 * Movies
 * Auto enthusiasts
