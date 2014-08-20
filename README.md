@@ -18,11 +18,23 @@ If you simply want to check out what 42matters profiler would infer about you, t
 
 ### Integrate the library
 
-1. Download the [latest jar (1.0.3-beta)](https://s3.amazonaws.com/profiler.42matters.com/42matters-profiler-1.0.3-beta.jar)
+1. Download and reference the [latest jar (1.0.3-beta)](https://bintray.com/42matters/android/profiler/view)
+or put the following repository and dependency in your gradle build file:
+  ```groovy  
+  repositories {
+      maven {
+          url "http://dl.bintray.com/42matters/android"
+      }
+      ...
+  }
 
-2. Put the jar into your project and correctly reference it.
+  dependencies {
+      compile 'com.core42matters.android:profiler:1.0.3-beta@jar'
+      ...
+  }
 
-3. Configure your app's `AndroidManifest.xml` like this
+  ```
+2. Configure your app's `AndroidManifest.xml` like this
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -45,13 +57,13 @@ If you simply want to check out what 42matters profiler would infer about you, t
 
     Replace **YOUR_APP_ID** with the app id you get on your app page
 
-4. If you use proguard, add these into your `proguard-rules.pro`
+3. If you use proguard, add these into your `proguard-rules.pro` if your app does not use Google Play Services
 
   ```
   -dontwarn com.google.android.gms.**
   ```
 
-5. Call `Profiler.getProfile(Context context)` to get the inferred profile about the user installed your app. This call returns immediately and start a background thread to fetch the profile if none is cached locally.
+4. Call `Profiler.getProfile(Context context)` to get the inferred profile about the user installed your app. This call returns immediately and start a background thread to fetch the profile if none is cached locally.
 
 ### Privacy
 

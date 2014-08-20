@@ -11,6 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             runProguard true
@@ -19,7 +20,14 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url "http://dl.bintray.com/42matters/android"
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.google.android.gms:play-services:4.+'
+    compile 'com.core42matters.android:profiler:1.0.3-beta@jar'
 }
