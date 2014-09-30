@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.widget.TextView;
 
+import com.core42matters.android.profiler.AppIdMissingException;
 import com.core42matters.android.profiler.Profile;
 import com.core42matters.android.profiler.Profiler;
 
@@ -39,7 +40,12 @@ public class MainActivity extends PreferenceActivity implements LoaderManager.Lo
         return new AsyncTaskLoader<Profile>(this) {
             @Override
             public Profile loadInBackground() {
-                return Profiler.getProfileSync(MainActivity.this);
+                try {
+                    return Profiler.getProfileSync(MainActivity.this);
+                } catch (AppIdMissingException e) {
+                    e.printStackTrace();
+                }
+                return null;
             }
         };
     }

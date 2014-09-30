@@ -18,8 +18,8 @@ If you simply want to check out what 42matters profiler would infer about you, t
 
 ### Integrate the library
 
-1. Download and reference the [latest jar (1.0.3-beta)](https://bintray.com/42matters/android/profiler/view)
-or put the following repository and dependency in your gradle build file:
+1. [![Download](https://api.bintray.com/packages/42matters/android/profiler/images/download.svg)](https://bintray.com/42matters/android/profiler/_latestVersion) and reference it
+or put the following repository and dependency in your `build.gradle`:
   ```groovy  
   repositories {
       maven {
@@ -29,7 +29,7 @@ or put the following repository and dependency in your gradle build file:
   }
 
   dependencies {
-      compile 'com.core42matters.android:profiler:1.0.3-beta@jar'
+      compile 'com.core42matters.android:profiler:1.0.4-beta@jar'
       ...
   }
 
@@ -71,7 +71,7 @@ You need to provide a preference in the default shared preferences for users to 
 This demo also shows how to implement this in the preferences.
 
 
-## What's inside a profile (1.0.3-beta)
+## What's inside a profile (1.0.4-beta)
 
 ### Gender
 
@@ -81,26 +81,38 @@ This demo also shows how to implement this in the preferences.
 
 `profile.getInterests()` would return a `List<String>` containing the interests of this user we predict.
 
-The `1.0.3-beta` supports following interests:
-* Music consumption
-* Movies
+The `1.0.4-beta` supports following interests:
 * Auto enthusiasts
-* Health
-* Fitness
+* Beauty
+* Books
+* Comics
+* Commuting
 * Cooking
-* Gastronomy
+* Dieting
 * Education
-* Traveling
-* Sports entertainment
-* Sports activity
+* Fashion
+* Finance
+* Fitness
+* Gastronomy
+* Health
+* Job market
+* Medical
+* Movies
+* Music consumption
+* News
+* Photography
+* Pregnancy
+* Productivity
+* Real Estate
 * Running
 * Singles
-* Pregnancy
+* Sports activity
+* Sports entertainment
 * Techies
-* Dieting
+* Traveling
 * Value shopper
-* Books
-* Real Estate
+
+Interested in deals, coupons and price comparison
 
 
 ## Use AdMobPlugin to decorate an ad request
