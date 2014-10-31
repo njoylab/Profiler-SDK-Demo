@@ -29,7 +29,7 @@ or put the following repository and dependency in your `build.gradle`:
   }
 
   dependencies {
-      compile 'com.core42matters.android:profiler:1.0.4-beta@jar'
+      compile 'com.core42matters.android:profiler:1.1.0-beta@jar'
       ...
   }
 
@@ -71,7 +71,7 @@ You need to provide a preference in the default shared preferences for users to 
 This demo also shows how to implement this in the preferences.
 
 
-## What's inside a profile (1.0.4-beta)
+## What's inside a profile (1.1.0-beta)
 
 ### Gender
 
@@ -81,7 +81,7 @@ This demo also shows how to implement this in the preferences.
 
 `profile.getInterests()` would return a `List<String>` containing the interests of this user we predict.
 
-The `1.0.4-beta` supports following interests:
+The `1.1.0-beta` supports following interests:
 * Auto enthusiasts
 * Beauty
 * Books
